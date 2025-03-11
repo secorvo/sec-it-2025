@@ -20,10 +20,23 @@ author: Secorvo Security Consulting GmbH
 - [What to do - for Software vendors and developers - Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/security/intelligence/supply-chain-malware?view=o365-worldwide#for-software-vendors-and-developers)
 - [K02: Supply Chain Vulnerabilities - OWASP](https://owasp.org/www-project-kubernetes-top-ten/2022/en/src/K02-supply-chain-vulnerabilities)
 - [Supply-chain Levels for Software Artifacts - SLSA](https://slsa.dev/)
-- [IBM Supply Chain Threats](https://www.intel.com/content/dam/www/central-libraries/us/en/documents/software-supply-chain-threat-model-whitepaper.pdf) 	
+- [IBM Supply Chain Threats](https://www.intel.com/content/dam/www/central-libraries/us/en/documents/software-supply-chain-threat-model-whitepaper.pdf)   
 - [XKCD: Dependency](https://xkcd.com/2347/)
 - [Veracode - State of Log4j Vulnerabilities: How Much Did Log4Shell Change?](https://www.veracode.com/blog/research/state-log4j-vulnerabilities-how-much-did-log4shell-change)
 - [Cyber Safety Review Board - Review of the December 2021 Log4j Event ](https://www.cisa.gov/sites/default/files/publications/CSRB-Report-on-Log4-July-11-2022_508.pdf)
+- [ISO 27036](https://www.iso.org/standard/82905.html)
+- [Nist RMF](https://csrc.nist.gov/projects/risk-management/about-rmf)
+- [MITRE SoT](https://sot.mitre.org/framework/system_of_trust.html)
+- [NIST 800-161](https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final)
+- [China GB/T 36637-2018](https://www.codeofchina.com/standard/GBT36637-2018.html)
+- [SCS 9001](https://tiaonline.org/what-we-do/scs-9001-supply-chain-security-standard/)
+- [Google SLSA](https://slsa.dev/)
+- [Reproducable Dev Environments](https://medium.com/nerd-for-tech/creating-reproducible-development-environments-fac8d6471f35)
+- [Lockheed Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
+- [Open Software Supply Chain Attack Reference (OSC&R)](https://pbom.dev/)
+- [Stakeholder-Specific Vulnerability Categorization (SSVC)](https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc)
+- [Securing the Software Supply Chain: Recommended Practices for Software Bill of Materials Consumption](https://media.defense.gov/2023/Nov/09/2003338086/-1/-1/0/SECURING%20THE%20SOFTWARE%20SUPPLY%20CHAIN%20RECOMMENDED%20PRACTICES%20FOR%20SOFTWARE%20BILL%20OF%20MATERIALS%20CONSUMPTION.PDF)
+- [in-toto](https://in-toto.io/docs/what-is-in-toto/)
 
 ### Beispiele
 
@@ -44,8 +57,10 @@ author: Secorvo Security Consulting GmbH
 - [SBOM: Definition, Formats, Impact on CloudNative, Benefits & Challenges - CrowdStrike ](https://www.crowdstrike.com/cybersecurity-101/secops/software-bill-of-materials-sbom/)
 - [SBOM: bestes Mittel zur Sicherung der Software-Lieferkette - dev-insider](https://www.dev-insider.de/sbom-bestes-mittel-zur-sicherung-der-software-lieferkette-a-eabdc9538105e87a4283e75ba1a6a9cd/)
 - [CycloneDX - OWASP](https://cyclonedx.org/)
+- [OWASP Authoritative Guide to SBOM](https://cyclonedx.org/guides/OWASP_CycloneDX-Authoritative-Guide-to-SBOM-en.pdf)
 - [Software Package Data Exchange (SPDX) - TheLinuxFoundationProject](https://spdx.dev/)
 - [Software Identification Tags (SWID) - NIST](https://nvd.nist.gov/products/swid)
+- [Graph of Understanding Artifact Composition (GUAC)](https://guac.sh/)
 
 ### Tools
 

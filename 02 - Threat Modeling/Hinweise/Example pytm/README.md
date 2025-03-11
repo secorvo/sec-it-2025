@@ -1,14 +1,35 @@
 # pyTM Threat Modeling
 
-[OWASP Juice Shop Threat Model](https://github.com/juice-shop/juice-shop/blob/master/threat-model.json)
+## Vorbereitung pyTM
 
-## pyTM Aufrufe
+### Erstellen einer virtuellen Python-Umgebung und Installation von Modulen
 
 ```bash
-python3 ./test.py --dfd | dot -Tpng -o sample.png
+git clone https://github.com/OWASP/pytm.git
+cd pytm
 ```
 
-## pyTM Code
+```bash
+python3 -m venv .venv
+```
+
+```bash
+source .venv/bin/activate
+```
+
+```bash
+pip install graphviz
+```
+
+```bash
+curl -L -o plantuml.jar https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar
+```
+
+## OWASP Juice Shopt Threat Model
+
+[OWASP Juice Shop Threat Model](https://github.com/juice-shop/juice-shop/blob/master/threat-model.json)
+
+### pyTM Code
 
 ```python
 import graphviz
@@ -72,7 +93,53 @@ Dataflow(app_server, local_fs, name="Logging")
 tm.process()
 ```
 
+## pyTM Aufrufe
+
+### Erzeugung DFD
+
+```bash
+python3 ./test.py --dfd | dot -Tpng -o sample.png
+```
+
+### Erzeugung Report
+
+```bash
+python3 test.py --report docs/basic_template.md | pandoc -f markdown -t html > ./test.html
+```
+
+### Erzeugung Sequence Diagram
+
+```bash
+python3 test.py --seq | java -Djava.awt.headless=true -jar ./plantuml.jar -tpng -pipe > ./seq.png
+```
+
+### Erzeugung JSON-Übersicht
+
+```bash
+python3 test.py --json ./test.json
+```
+
+#### Analyse mit [`jq`](https://jqlang.org/)
+
+```bash
+jq 'keys' test.json
+```
+
+```bash
+jq '.actors[] | .name' test.json
+```
+
+```bash
+jq '.assets[] | .name' test.json
+```
+
+```bash
+jq -r 'paths(scalars) as $p | "\($p | join(".")): \(getpath($p))"' test.json
+```
+
 ## Mermaid Flowchart
+
+Ein zusätzliches Beispiel, um ein DFD mit [Mermaid](https://mermaid.js.org/) zu erstellen. Kann in einem [Online-Editor](https://mermaid.live/) ausprobiert werden:
 
 ```mermaid
 graph LR;

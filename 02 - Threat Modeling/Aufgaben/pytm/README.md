@@ -9,7 +9,8 @@ Für die Übung muss die pyTM-Umgebung eingerichtet werden. Dazu sollten folgend
 - Clonen vom [pyTM Github Repo](https://github.com/OWASP/pytm.git)
 - Installation einer virtuellen Python-Umgebung
 - Aktivierung der virtuellen Python-Umgebung
-- Installation von `pytm` in die virtuelle Umgebung
+- Installation von `graphviz` in die virtuelle Umgebung
+- Installation von `plantuml.jar`
 
 ## Erstellung eines pyTM Modells für den OWASP Juice Shop
 
@@ -31,7 +32,7 @@ Als Basis für die Übung dient das [Threat Model](https://github.com/juice-shop
 
 ## Erstellung einer JSON-Übersicht
 
-> **AUFGABE:** Erstelle eine JSON-Übersicht über die Bedrohungen und schaue Dir diese mit `jq` an.
+> **AUFGABE:** Erstelle eine JSON-Übersicht über die Bedrohungen und analysiere verschiedene Aspekte mit [`jq`](https://jqlang.org/).
 
 ## Diskussion der Nutzung von pyTM
 
